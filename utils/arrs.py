@@ -12,7 +12,7 @@ def get(array, index, default=None):
     :return: значение по индексу или значение по-умолчанию.
     """
 
-    if -len(array) <= index < len(array):
+    if 0 <= index < len(array):
         return array[index]
     return default
 
